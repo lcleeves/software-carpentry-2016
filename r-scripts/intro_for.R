@@ -87,3 +87,45 @@ for(file in filenames){
   print(file)
   analyze(file)
 }
+pdf("inflamation-01.pdf")
+analyze("inflammation-01.csv")
+#so pdf is still open here. rad bc you can add stuff on top.
+#but not done writing it until:
+dev.off()
+
+
+num <- 0
+
+if(num>100){
+  print("greater")
+}else{
+  print("not greater")
+}
+print("done")
+#dont need else:
+num <- 25
+if(num>25){
+  print("num is greater than 25")
+}
+#tests!!
+sign <- function(num){
+  if(num>0) {
+    return(1)
+  }else if (num == 0){
+    return(0)
+  }else{
+    return(-1)
+  }
+  
+}
+if(1>0&-1>0){
+  print("both parts are true")
+}else{
+  print("at least one part is not true")
+}
+
+if(1>0|-1>0){
+  print("one or both parts are true")
+}else{
+  print("##not sure if this is the write comment?at least one part is not true")
+}
